@@ -23,3 +23,8 @@ spring:
 logging:
   level:
     me.hwan2da: DEBUG
+
+jwt:
+  header: Authorization
+  secret: J2h3YW4yZGEtdGVjaC1zcHJpbmctYm9vdC1qd3QtdHV0b3JpYWwtc2VjcmV0LWh3YW4yZGEtdGVjaC1zcHJpbmctYm9vdC1qd3QtdHV0b3JpYWwtc2VjcmV0Jw==
+  token-validity-in-seconds: 86400
