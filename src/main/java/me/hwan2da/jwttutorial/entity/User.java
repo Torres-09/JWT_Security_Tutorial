@@ -22,7 +22,7 @@ public class User {
     private Long userId;
 
     @Column(name = "username", length = 50, unique = true)
-    private String userName;
+    private String username;
 
     @JsonIgnore
     @Column(name = "password", length = 100)
