@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 public class SignUpDto {
     @NotNull
     @Size(min = 3, max = 50)
-    private String userName;
+    private String username;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @NotNull

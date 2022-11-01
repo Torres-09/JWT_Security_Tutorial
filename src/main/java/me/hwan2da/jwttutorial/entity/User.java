@@ -22,7 +22,7 @@ public class User {
     private Long userId;
 
     @Column(name = "username", length = 50, unique = true)
-    private String userName;
+    private String username;
 
     @JsonIgnore
     @Column(name = "password", length = 100)
@@ -37,7 +37,7 @@ public class User {
 
     @ManyToMany
     @JoinTable(
-            name = "user_authority",
+            name = "user_authority_tb",
             joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "user_id")},
             inverseJoinColumns = {@JoinColumn(name = "authority_name", referencedColumnName = "authority_name")})
     private Set<Authority> authorities;
